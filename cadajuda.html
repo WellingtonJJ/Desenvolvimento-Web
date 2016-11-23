@@ -39,8 +39,13 @@
 
 				<form name="formajuda" id="formajuda" action =""><!--Falta onsubmit ValidarCamposObrigatorios(this) pra chamar O JS -->
 					<fieldset id = "recebajuda">
+					
 						<legend> Receba ajuda!</legend>
+						
+						<fieldset id = " dadosresponsavel"><legend> Dados do responsável</legend>
+						
 												<!-- COMEÇO DOS FORMULÁRIOS --> 
+												
 						<!-- NOME DO RESPONSAVEL -->
 						<label>Nome:
 						<input required size="50" maxlength = "40" type = "text"name="nome" id="nome" tabindex="1"/> <!--JS entra aqui p/ validar-->
@@ -53,7 +58,7 @@
 						
 						<!-- TELEFONE   OBS: TELPF = TELEFONE DE PESSOA FISICA -->
 						<label>Telefone:
-						<input required size="15" maxlength="12" type="number" name="telpf" id="telpf" tabindex="3" />
+						<input required size="15" maxlength="12" type="tel" name="telpf" id="telpf" tabindex="3" />
 						</label><br/><br/>
 						
 						<!-- EMAIL DO RESPONSAVEL -->
@@ -61,6 +66,9 @@
 						<input required size="40" maxlength ="30" type="text" name="email" id="email" tabindex="4" />
 						</label><br/><br/>
 						
+						</fieldset>
+						
+						<fieldset id="dadosinstituicao" ><legend> Dados da instituicao</legend>
 						<!-- NOME DA Instituição -->
 						<label>Instituição:
 						<input required size="50" maxlength="40" type="text" name="instituicao" id="instituicao" tabindex="5" />
@@ -85,7 +93,7 @@
 						<textarea rows="5" cols="42"></textarea>
 						<input required type="time" id="caixa" name="caixa" tabindex="9" />
 						</label><br/><br/>
-						
+						</fieldset>
 												
 				
 				
@@ -101,9 +109,6 @@
 				
 			</div>
 			<!--FIM RODAPÉ-->
-			 TEXTO CADASTRO RODAPE
-			 WQWQEWQEOPKOWQEKO
-			 WQEWQEKO
 		</div>		
 	
 	</body>
