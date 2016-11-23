@@ -41,7 +41,7 @@
 
 			<!--COMEÇO CONTEÚDO-->
 			<div class="main">
-
+				<div id="bugs" > </div>
 				<form name="formajuda" id="formajuda" action =""><!--Falta onsubmit ValidarCamposObrigatorios(this) pra chamar O JS -->
 					<fieldset id = "recebajuda">
 					
@@ -53,7 +53,7 @@
 												
 						<!-- NOME DO RESPONSAVEL -->
 						<label>Nome:
-						<input required size="50" maxlength = "40" type = "text"name="nome" id="nome" tabindex="1"/> <!--JS entra aqui p/ validar-->
+						<input required size="50" maxlength = "40" type = "text"name="nome" id="nome" tabindex="1" onblur="validarTamanhoNome ()"/> <!--JS entra aqui p/ validar-->
 						</label>      <!-- Tem alguns espaços aqui para os forms nao ficarem colados!(nao sei se funciona -->
 						
 						<!-- IDADE DO RESPONSAVEL  -->
