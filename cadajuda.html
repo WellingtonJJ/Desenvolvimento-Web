@@ -2,7 +2,7 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
-		<title>Cadastrar Ajuda | Help the future</title>
+		<title>Peça ajuda | Help the future</title>
 		
 		<!--Referência CSS e Bootstrap-->
 		<link rel="stylesheet" href="css/estilo.css">
@@ -40,19 +40,52 @@
 				<form name="formajuda" id="formajuda" action =""><!--Falta onsubmit ValidarCamposObrigatorios(this) pra chamar O JS -->
 					<fieldset id = "recebajuda">
 						<legend> Receba ajuda!</legend>
+												<!-- COMEÇO DOS FORMULÁRIOS --> 
+						<!-- NOME DO RESPONSAVEL -->
 						<label>Nome:
 						<input required size="50" maxlength = "40" type = "text"name="nome" id="nome" tabindex="1"/> <!--JS entra aqui p/ validar-->
 						</label>      <!-- Tem alguns espaços aqui para os forms nao ficarem colados!(nao sei se funciona -->
 						
+						<!-- IDADE DO RESPONSAVEL  -->
 						<label>Idade:
 						<input required size="4" maxlength = "3" type ="number" name="idade"id="idade" tabindex="2" />
 						</label><br/><br/>
 						
-						<label>E-mail:
-						<input required size="40" maxlength ="30" type="text"
-						</label>
+						<!-- TELEFONE   OBS: TELPF = TELEFONE DE PESSOA FISICA -->
+						<label>Telefone:
+						<input required size="15" maxlength="12" type="number" name="telpf" id="telpf" tabindex="3" />
+						</label><br/><br/>
 						
-				
+						<!-- EMAIL DO RESPONSAVEL -->
+						<label>E-mail:
+						<input required size="40" maxlength ="30" type="text" name="email" id="email" tabindex="4" />
+						</label><br/><br/>
+						
+						<!-- NOME DA Instituição -->
+						<label>Instituição:
+						<input required size="50" maxlength="40" type="text" name="instituicao" id="instituicao" tabindex="5" />
+						</label><br/><br/>
+						
+						<!-- TELEFONE DA INSTITUIÇÃO         OBS: TELPJ = TELEFONE DE PESSOA JURIDICA -->
+						<label>Telefone da instituicao:
+						<input required size="15" maxlength="12" type="number" name="telpj" id="telpj" tabindex="6" />
+						</label><br/><br/>
+						
+						<!-- ENDEREÇO DA INSTITUIÇÃO  -->
+						<label>Endereço:
+						<input  required size="63" maxlength ="50" type="text" name="endereco" id="endereco" tabindex="7" />
+						</label><br/><br/>
+			
+						<!-- HORARIO PARA DEIXAR AJUDA / VISITAR    		OBS: ACHAR NOME MELHOR SE DER-->
+						<label>Horario de acesso:
+						<input required type="time" id="horario" name="horario" tabindex="8" />
+						</label><br/><br/>
+						<!--   CAIXA PARA DIZER O QUE PRECISA! PODE PRECISAR-->
+						<label>:
+						<input required type="time" id="horario" name="horario" tabindex="8" />
+						</label><br/><br/>
+						
+												
 				
 				
 					</fieldset>
