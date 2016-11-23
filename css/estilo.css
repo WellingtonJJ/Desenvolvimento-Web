@@ -1,9 +1,4 @@
-.container{
-	width: 1200px;
-	height: auto;
-	font-family: arial;
-	margin: 0 auto;
+.container-fluid{
 	background-color: black;
-	color:white;
+	color: white;
 }
-
