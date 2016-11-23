@@ -10,34 +10,64 @@
 		
 	</head>
 	<body>
-	
-	
-	
-	
-	
-		<form name="formajuda" id="formajuda" action =""><!--Falta onsubmit ValidarCamposObrigatorios(this) pra chamar O JS -->
-			<fieldset id = "recebajuda">
-				<legend> Receba ajuda!</legend>
-				<label>Nome:
-				<input required size="50" maxlength = "40" type = "text"name="nome" id="nome" tabindex="1" <!--JS entra aqui p/ validar-->/>
-				</label>      <!-- Tem alguns espaços aqui para os forms nao ficarem colados!(nao sei se funciona -->
+		<div class="container">
+			<!--COMEÇO TOPO-->
+			<div class="topo">
+				<div>LOGO</div>
 				
-				<label>Idade:
-				<input required size="4" maxlength = "3" type ="number" name="idade"id="idade" tabindex="2" />
-				</label><br/><br/>
+			</div>
+			<!--FIM TOPO-->
+
+
+			<!--COMEÇO MENU LATERAL-->
+			
+			<div>
+				<ul class="menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="escolas.html">Escolas</a></li>
+					<li><a href="cadajuda.html">Cadastrar Escola</a></li>
+					<li><a href="sobre.html">Sobre Nós</a></li>
+					<li><a href="faleconosco.html">Fale Conosco</a></li>
+				</ul>
+			</div>
+			
+			<!--FIM MENU LATERAL-->
+
+
+			<!--COMEÇO CONTEÚDO-->
+			<div class="main">
+
+				<form name="formajuda" id="formajuda" action =""><!--Falta onsubmit ValidarCamposObrigatorios(this) pra chamar O JS -->
+					<fieldset id = "recebajuda">
+						<legend> Receba ajuda!</legend>
+						<label>Nome:
+						<input required size="50" maxlength = "40" type = "text"name="nome" id="nome" tabindex="1" <!--JS entra aqui p/ validar-->/>
+						</label>      <!-- Tem alguns espaços aqui para os forms nao ficarem colados!(nao sei se funciona -->
+						
+						<label>Idade:
+						<input required size="4" maxlength = "3" type ="number" name="idade"id="idade" tabindex="2" />
+						</label><br/><br/>
+						
+						<label>E-mail:
+						<input required size="40" maxlength ="30" type="text"
+						</label>
+						
 				
-				<label>E-mail:
-				<input required size="40" maxlength ="30" type="text"
-				</label>
 				
-		
-		
-		
-		
-		
-		
-		
-			</fieldset>
-		</form>
+				
+					</fieldset>
+				</form>
+				
+			</div>
+			<!--FIM CONTEÚDO-->
+
+
+			<!--COMEÇO RODAPÉ-->
+			<div class="rodape">
+				
+			</div>
+			<!--FIM RODAPÉ-->
+		</div>		
+	
 	</body>
 </html>
