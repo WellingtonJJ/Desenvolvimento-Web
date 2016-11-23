@@ -1,24 +1,16 @@
-<<<<<<< HEAD
-<html>
-=======
 <!Doctype html>
 <html lang="pt-br">
->>>>>>> 19156118744e957c368ea365682daf2f6263d182
 	<head>
 		<meta charset="utf-8">
-		<title>Sobre | Help the future</title>
-
+		<title>Cadastrar Ajuda | Help the future</title>
+		
 		<!--Referência CSS e Bootstrap-->
 		<link rel="stylesheet" href="css/estilo.css">
 		<!--Fim CSS e Bootstrap-->
 		
 	</head>
 	<body>
-<<<<<<< HEAD
-		<div id="menu">
-=======
 		<div class="container">
-
 			<!--COMEÇO TOPO-->
 			<div class="topo">
 				<div>LOGO</div>
@@ -45,6 +37,26 @@
 			<!--COMEÇO CONTEÚDO-->
 			<div class="main">
 
+				<form name="formajuda" id="formajuda" action =""><!--Falta onsubmit ValidarCamposObrigatorios(this) pra chamar O JS -->
+					<fieldset id = "recebajuda">
+						<legend> Receba ajuda!</legend>
+						<label>Nome:
+						<input required size="50" maxlength = "40" type = "text"name="nome" id="nome" tabindex="1"/> <!--JS entra aqui p/ validar-->
+						</label>      <!-- Tem alguns espaços aqui para os forms nao ficarem colados!(nao sei se funciona -->
+						
+						<label>Idade:
+						<input required size="4" maxlength = "3" type ="number" name="idade"id="idade" tabindex="2" />
+						</label><br/><br/>
+						
+						<label>E-mail:
+						<input required size="40" maxlength ="30" type="text"
+						</label>
+						
+				
+				
+				
+					</fieldset>
+				</form>
 				
 			</div>
 			<!--FIM CONTEÚDO-->
@@ -56,11 +68,6 @@
 			</div>
 			<!--FIM RODAPÉ-->
 		</div>		
->>>>>>> 19156118744e957c368ea365682daf2f6263d182
-		
-		</div>
-		<div id="conteudo">
-		
-		</div>
+	
 	</body>
 </html>
