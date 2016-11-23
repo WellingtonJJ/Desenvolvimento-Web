@@ -76,22 +76,74 @@
 						
 						<!-- TELEFONE DA INSTITUIÇÃO         OBS: TELPJ = TELEFONE DE PESSOA JURIDICA -->
 						<label>Telefone da instituicao:
-						<input required size="15" maxlength="12" type="number" name="telpj" id="telpj" tabindex="6" />
+						<input required size="15" maxlength="12" type="tel" name="telpj" id="telpj" tabindex="6" />
 						</label><br/><br/>
 						
 						<!-- ENDEREÇO DA INSTITUIÇÃO  -->
-						<label>Endereço:
-						<input  required size="63" maxlength ="50" type="text" name="endereco" id="endereco" tabindex="7" />
+						
+						<label>Selecione o estado:
+                                <select name="estado" id="estado" tabindex="7">
+									<option value="ac">AC</option>
+                                    <option value="al">AL</option>
+                                    <option value="ap">AP</option>
+                                    <option value="am">AM</option>
+                                    <option value="ba">BA</option>
+									<option value="ce">CE</option>
+                                    <option value="df">DF</option>
+                                    <option value="es">ES</option>
+                                    <option value="go">GO</option>
+                                    <option value="ma">MA</option>
+									<option value="mt">MT</option>
+                                    <option value="ms">MS</option>
+									<option value="mg">MG</option>
+                                    <option value="pa">PA</option>
+									<option value="pb">PB</option>
+                                    <option value="pr">PR</option>
+									<option value="pe">PE</option>
+                                    <option value="pi">PI</option>
+									<option value="rj">RJ</option>
+                                    <option value="rn">RN</option>
+									<option value="rs">RS</option>
+                                    <option value="ro">RO</option>
+									<option value="rr">RR</option>
+                                    <option value="sc">SC</option>
+									<option value="sp">SP</option>
+                                    <option value="se">SE</option>
+									<option value="to">TO</option>
+                                </select>    
+                        </label> <br /> <br />
+						
+						
+						<label>Digite a cidade:
+						<input  required size="40" maxlength ="30" type="text" name="cidade" id="cidade" tabindex="8" />
 						</label><br/><br/>
 			
-						<!-- HORARIO PARA DEIXAR AJUDA / VISITAR    		OBS: ACHAR NOME MELHOR SE DER-->
-						<label>Horario de acesso:
-						<input required type="time" id="horario" name="horario" tabindex="8" />
+				
+			
+			
+						<label>Endereço:
+						<input  required size="63" maxlength ="50" type="text" name="endereco" id="endereco" tabindex="9" />
 						</label><br/><br/>
+						
+						<label>Referências:
+						<input  required size="63" maxlength ="50" type="text" name="referencia" id="referencia" tabindex="10" />
+						</label><br/><br/>
+			
+			
+			
+			
+			
+						<!-- HORARIO PARA DEIXAR AJUDA / VISITAR    		OBS: ACHAR NOME MELHOR SE DER-->
+						<label>Horario de abertura do local:
+						<input required type="time" id="abertura" name="abertura" tabindex="11" />
+						</label> Até às:<label>
+						<input required type="time" id="fechamento" name="fechamento" tabindex="12" />
+						</label><br/><br/>
+						
+						
 						<!--   CAIXA PARA DIZER O QUE PRECISA! PODE PRECISAR-->
 						<label>O que a instituicao precisa:<br/>
-						<textarea rows="5" cols="42"></textarea>
-						<input required type="time" id="caixa" name="caixa" tabindex="9" />
+						<textarea rows="7" cols="60"></textarea>
 						</label><br/><br/>
 						</fieldset>
 												
