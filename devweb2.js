@@ -13,8 +13,8 @@ $(function() {
         rules: {
             nome:{required: true, minlength: 5},
 			idade:{required: true},
-			telpf:{required: true, minlength: 8},
-			telpf2:{required: true, minlength: 8},
+			telpf:{required: true, minlength: 10},
+			telpf2:{required: true, minlength: 11},
             email:{required: true, minlength: 9},
 			instituicao:{required: true,minlength: 10},
 			sigla:{required: true,minlength: 3},
