@@ -1,0 +1,43 @@
+$(function() {
+    
+    
+  
+    
+    /*Regras de validação dos campos do form - biblioteca JQUERY VALIDATION*/
+    $("#formajuda").validate({
+        rules: {
+            nome:{required: true, minlength: 5},
+			idade:{required: true},
+			telpf:{required: true,minlength: 8},
+            email:{required: true,minlength: 8},
+            telpj:{required: true,minlength: 8},
+            instituicao:{required: true,minlength:6},
+            sigla:{required:true,minlength:3},
+            fechamento:{required:true},
+            abertura:{required:true},
+			estado:{required:true},
+            referencia:{required:false},
+            endereco:{required:true,minlength: 7},
+			cidade:{required:true,minlength:4}
+        },
+    
+        messages: {
+            nome:{required: "Digite o nome",minlength:"Nome curto demais"},
+            email:{required: "Informe o email", minlength:"E-mail invalido"},
+            telpf:{required: "Digite o telefone pessoal",minlength:"Telefone pessoal invalido"},
+			telpj:{required: "Digite o telefone da instituicao",minlength:"Telefone da instituicao invalido"},
+            idade:{required: "Digite a idade"},
+            instituicao:{required: "Digite a instituicao",minlength:"Instituicao invalida"},
+            sigla:{required: "Digite a sigla"minlength:"Sigla invalida"},
+            cidade:{required: "Digite a cidade",minlength:"Cidade invalida"},
+            estado:{required: "Digite a UF"},
+            abertura:{required: "Informe o horario de abertura"},
+			fechamento:{required: "Informe o horario de fechamento"}
+        },
+    
+        //Monta a mensagem em uma caixa separada
+        errorLabelContainer: $("#cagbugs"),
+        errorElement: "li"
+    });
+ 
+});

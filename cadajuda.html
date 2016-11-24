@@ -13,6 +13,17 @@
 		<link rel="stylesheet" href="css/estilo.css">
 		<!--Fim CSS e Bootstrap-->
 		
+		<!--JS pra blibioteca jquery funcionar -->
+		<script src="jquery/jquery-1.11.2.js" type="text/javascript"></script>
+		
+		<!-- Jquery pra verificar -->
+		<script src="jquery/jquery.validation/jquery.validate.js" type="text/javascript"></script>
+		
+		<!-- Arquivo JS local -->
+		<script src="devweb2.js"> type="text/javascript";</script>
+		
+		
+		
 	</head>
 	<body>
 		<div class="container">
@@ -41,12 +52,11 @@
 
 			<!--COMEÇO CONTEÚDO-->
 			<div class="main">
-				<div id="bugs" > </div>
-				<form name="formajuda" id="formajuda" action =""><!--Falta onsubmit ValidarCamposObrigatorios(this) pra chamar O JS -->
+			
+				<form id="formajuda" >
 					<fieldset id = "recebajuda">
-					
 						<legend> Receba ajuda!</legend>
-						
+
 						<fieldset id = " dadosresponsavel"><legend> Dados do responsável</legend>
 						
 												<!-- COMEÇO DOS FORMULÁRIOS --> 
@@ -58,7 +68,7 @@
 						
 						<!-- IDADE DO RESPONSAVEL  -->
 						<label>Idade:
-						<input required size="4" maxlength = "3" type ="number" name="idade"id="idade" tabindex="2" />
+						<input required size="4" maxlength = "3" type ="tel" name="idade"id="idade" tabindex="2" />
 						</label><br/><br/>
 						
 						<!-- TELEFONE   OBS: TELPF = TELEFONE DE PESSOA FISICA -->
@@ -140,7 +150,7 @@
 						
 						<label>Referências:
 						<input  required size="63" maxlength ="50" type="text" name="referencia" id="referencia" tabindex="11"
-						placeholder="Exemplo: Perto da ponte universitária"				/>
+						placeholder="Exemplo: Perto da ponte universitária (OPCIONAL)"				/>
 						</label><br/><br/>
 			
 			
