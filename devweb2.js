@@ -3,6 +3,10 @@ $(function() {
     
     
   
+   /*MASKS DA FORMAJUDA*/ 
+    $("#telpf2").mask("(99) 99999-9999");
+	$("#telpf").mask("(99) 9999-9999");
+    $("#telpj").mask("(99) 9999-9999");	
     
     /*Regras de validação dos campos do form - biblioteca JQUERY VALIDATION*/
     $("#formajuda").validate({
@@ -10,6 +14,7 @@ $(function() {
             nome:{required: true, minlength: 5},
 			idade:{required: true},
 			telpf:{required: true, minlength: 8},
+			telpf2:{required: true, minlength: 8},
             email:{required: true, minlength: 9},
 			instituicao:{required: true,minlength: 10},
 			sigla:{required: true,minlength: 3},
@@ -28,6 +33,8 @@ $(function() {
                   minlength:"Nome invalido"},
 			idade:{required: "Digite sua idade"},
 			telpf:{required: "Digite seu telefone pessoal", 
+                  minlength:"Telefone invalido"},	  
+			telpf2:{required: "Digite seu telefone celular", 
                   minlength:"Telefone invalido"},	  
 			email:{required: "Digite seu email", 
                   minlength:"Email invalido"},	  
