@@ -4,6 +4,7 @@ $(function() {
     
   
    /*MASKS DA FORMAJUDA*/ 
+    $("#idade").mask("99?9");
     $("#telpf2").mask("(99) 99999-9999");
 	$("#telpf").mask("(99) 9999-9999");
     $("#telpj").mask("(99) 9999-9999");	
