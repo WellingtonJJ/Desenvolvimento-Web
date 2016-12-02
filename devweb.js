@@ -1,9 +1,9 @@
 
 $(function() {
     
-    
+     $("#limpar").click(function(){$("#formfaleconosco")[0].reset();});
   
-    
+	 $("#cancelar").click(function(){window.location.href='index.html';});
     /*Regras de validação dos campos do form - biblioteca JQUERY VALIDATION*/
     $("#formfaleconosco").validate({
         rules: {
