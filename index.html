@@ -7,11 +7,15 @@
 		
 		<title>Home | Help the future</title>
 		
-		<!--Referência CSS e Bootstrap-->
+		<!--Referência CSS e Bootstrap-->                <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
 		<link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css"/>
 		<link rel="stylesheet" href="css/estilo.css">
 		<!--Fim CSS e Bootstrap-->
+        <style rel="stylesheet">/>
+            .bloco { background-image: url("/images/logo-css3.png"); 
+            }
+        </style>
 		
 	</head>
 	<body>
@@ -27,7 +31,7 @@
 
 			<!--COMEÇO MENU LATERAL-->
 			
-			<div>
+			<div id="topo">
 				<ul class="menu">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="universidades.html">Universidades</a></li>
@@ -42,7 +46,7 @@
 
 			<!--COMEÇO CONTEÚDO-->
 			<div class="main container-fluid">
-				<div id="container">
+				<div id="principal">
 					<!--AQUI ENTRA O ORBIT E A BARRA DE PESQUISA-->
 					<div class="row banner">
                         
@@ -55,47 +59,48 @@
 					</div>
 					
 				</div>
+                <div id="meio">
+                    <fieldset class="como-funciona pagination-centered container-fluid">
+                        <legend><h2>COMO FUNCIONA</h2></legend>
 
-				<fieldset class="como-funciona pagination-centered container-fluid">
-					<legend><h2>COMO FUNCIONA</h2></legend>
-					
-						<div class="explicacao row-fluid">
-							<div class="bloco verde span4">
-								<div class ="thumbnail">
-									<!--<img src="img/teste.jpg" alt="Foto de Ajuda">-->
-									<div class="caption">
-										<h3>Universidades</h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, assumenda. A, autem dignissimos ratione alias earum mollitia, esse pariatur beatae sed delectus reprehend</p>
-									</div>
-								</div>
-							</div>
-							
-							<div class="bloco verde span4">
-								<div class ="thumbnail">
-									<!--<img src="img/teste.jpg" alt="Foto de Uniao">-->
-									<div class="caption">
-										<h3>Como Ajudar</h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, assumenda. A, autem dignissimos ratione alias earum mollitia, esse pariatur beatae sed delectus reprehend</p>
-									</div>
-								</div>
-							</div>
-							
-							<div class="bloco verde span4">
-								<div class ="thumbnail">
-									<!--<img src="img/teste.jpg" alt="Foto de Uniao">-->
-									<div class="caption">
-										<h3>Por que ajudar</h3>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, assumenda. A, autem dignissimos ratione alias earum mollitia, esse pariatur beatae sed delectus reprehend</p>
-									</div>
-								</div>
-							</div>
-							
-						</div>
-				</fieldset>
-				<br/>
-				<fieldset class="exemplos pagination-centered container-fluid">
+                        <div class="explicacao row-fluid">
+                            <div class="bloco verde span4">
+                                <div class ="thumbnail">
+                                    <img src="img/teste.jpg" alt="Foto de Ajuda">
+                                    <div class="caption">
+                                        <h3>Universidades</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, assumenda. A, autem dignissimos ratione alias earum mollitia, esse pariatur beatae sed delectus reprehend</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bloco verde span4">
+                                <div class ="thumbnail">
+                                    <img src="img/teste.jpg" alt="Foto de Uniao">
+                                    <div class="caption">
+                                        <h3>Como Ajudar</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, assumenda. A, autem dignissimos ratione alias earum mollitia, esse pariatur beatae sed delectus reprehend</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bloco verde span4">
+                                <div class ="thumbnail">
+                                    <img src="img/teste.jpg" alt="Foto de Uniao">
+                                    <div class="caption">
+                                        <h3>Por que ajudar</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, assumenda. A, autem dignissimos ratione alias earum mollitia, esse pariatur beatae sed delectus reprehend</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <br/>
+                <div id="sub">
+				    <fieldset class="exemplos pagination-centered container-fluid">
 					<legend><h2>Exemplos de Universidades que precisam de você</h2></legend>
-					<div class="exemplos row-fluid">
+                      <div class="exemplos row-fluid">
 						<div class="bloco-uni span4 pagination-centered">
                             <img src="img/logo-uff.png" alt="Foto do Andre">
                             <div class="caption">
@@ -122,8 +127,9 @@
                                 <a type="button" href="#" class="btn btn-default">Veja mais</a>
                             </div>
 						</div>
-					</div>
-				</fieldset>
+					   </div>
+                    </fieldset>
+                </div>    
 			</div>		
 			
 			
