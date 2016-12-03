@@ -1,7 +1,9 @@
 
 $(function() {
     
-    
+    $("#limpar2").click(function(){$("#formajuda")[0].reset();});
+  
+	$("#cancelar2").click(function(){window.location.href='index.html';});
   
    /*MASKS DA FORMAJUDA*/ 
     $("#idade").mask("99?9");
