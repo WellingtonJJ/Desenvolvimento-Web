@@ -74,24 +74,24 @@
 						<!-- IDADE DO RESPONSAVEL  -->
 						<label>Idade:
 						<input required size="4" maxlength = "3" type ="tel" name="idade"id="idade" tabindex="2" />
-						</label>
+						</label><br/>
 						
 						<!-- TELEFONE   OBS: TELPF = TELEFONE DE PESSOA FISICA -->
 						<label>Telefone fixo:
 						<input required size="15" maxlength="14" type="tel"
 						placeholder="(21) 5555-5555"	name="telpf" id="telpf" tabindex="3" />
-						</label>
+						</label><br/>
 						
 						<label>Telefone celular:
 						<input required size="15" maxlength="15" type="tel"
 						placeholder="(21) 99999-9999"	name="telpf2" id="telpf2" tabindex="4" />
-						</label>
+						</label><br/>
 						
 						<!-- EMAIL DO RESPONSAVEL -->
 						<label>E-mail:
 						<input required size="40" maxlength ="30" type="text" name="email" id="email" tabindex="5" 
 						placeholder="seuemail@dominio.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
-						</label>
+						</label><br/>
 						
 						</fieldset>
 						
@@ -100,19 +100,19 @@
 						<label>Nome da instituição:
 						<input required size="80" maxlength="50" type="text" name="instituicao" id="instituicao" tabindex="6"
 						placeholder="Universidade Federal Fluminense"	/>
-						</label>
+						</label><br/>
 						
 						
 						<label>Sigla da instituição:
 						<input required  size="7" maxlength="6" type="text" name="sigla" id="sigla" tabindex="7" 
 						placeholder="UFF" />
-						</label>
+						</label><br/>
 						
 						<!-- TELEFONE DA INSTITUIÇÃO         OBS: TELPJ = TELEFONE DE PESSOA JURIDICA -->
 						<label>Telefone da instituicao:
 						<input required size="15" maxlength="14" 
 						placeholder="(21) 2629-5000"	type="tel" name="telpj" id="telpj" tabindex="8" />
-						</label>
+						</label><br/>
 						
 						<!-- ENDEREÇO DA INSTITUIÇÃO  -->
 						
@@ -146,24 +146,24 @@
                                     <option value="se">SE</option>
 									<option value="to">TO</option>
                                 </select>    
-                        </label>
+                        </label><br/>
 						
 						
 						<label>Digite a Cidade:
 						<input  required size="40" maxlength ="30" type="text" name="cidade" id="cidade" tabindex="10" />
-						</label>
+						</label><br/>
 			
 				
 			
 			
 						<label>Endereço:
 						<input  required size="63" maxlength ="50" type="text" name="endereco" id="endereco" tabindex="11" />
-						</label>
+						</label><br/>
 						
 						<label>Referências:
 						<input  required size="63" maxlength ="50" type="text" name="referencia" id="referencia" tabindex="12"
 						placeholder="Exemplo: Perto da ponte universitária (OPCIONAL)"				/>
-						</label>
+						</label><br/>
 			
 			
 						<!-- HORARIO PARA DEIXAR AJUDA / VISITAR    		OBS: ACHAR NOME MELHOR SE DER-->
@@ -171,16 +171,19 @@
 						<input required type="time" id="abertura" name="abertura" tabindex="13" />
 						</label> Até às:<label>
 						<input required type="time" id="fechamento" name="fechamento" tabindex="14" />
-						</label>
+						</label><br/>
 						
 						
 						<!--   CAIXA PARA DIZER O QUE PRECISA! PODE PRECISAR-->
-						<label>O que a instituicao precisa:
+						<label>O que a instituicao precisa:<br/>
 						<textarea placeholder="Ex: Precisamos de alimentos não perecíveis, papel tamanho a4 e carteiras! " tabindex="15" rows="7" cols="60"></textarea>
-						</label>
-						<button type="submit" id="enviarformajuda">Enviar</button>
-						<button type="button" id="limpar2">Limpar</button>
-						<button type="button" id="cancelar2">Cancelar</button>
+						</label><br/>
+						
+						<button type="submit" id="enviar" class = "btn btn-info">Enviar</button>
+				
+				<button type="button" id="limpar" class = "btn btn-info">Limpar</button>
+				
+				<button type="button" id="cancelar" class = "btn btn-warning">Cancelar</button>
 						
 						
 						
